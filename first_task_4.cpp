@@ -13,6 +13,6 @@ int main(){
   y-=x;
   x+=y;
   y=-y;
-  
+
   std::cout << "x = " << x << " and y = " << y;
 }
