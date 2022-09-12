@@ -4,7 +4,7 @@
 
 int main(){
   std::string name;
-  std::string cash;
+  bool cash;
   int price;
   int temp;
 
@@ -16,16 +16,15 @@ int main(){
     std::cin >> price;
 
     std::cout <<"Is cash-back available for this product: ";
-    std::cin >> cash;
+    std::cin >> std::boolalpha >> cash;
 
     std::cout <<"Maximum storing temperature: ";
     std::cin >> temp;
 
     std::cout << std::endl << name << std::endl;
-    std::cout <<"Price:........";
+    std::cout <<"Price:...........";
     std::cout << std::setfill('0') << std::setw(8)<< std::right << std::uppercase << std::hex << price << std::endl;
-    std::cout << "Has cash-back:" <<  std::setw(8) << std::setfill('.') << std::right << cash << std::endl;
-    std::cout << "Max temerature:" << std::setw(7) << std::dec << std::right <<
-    std::showpos << temp;
+    std::cout << "Has cash-back:" <<  std::setw(11) << std::setfill('.') << std::right << cash << std::endl;
+    std::cout << "Max temerature:" << std::setw(10) << std::dec << std::right << std::showpos << temp;
     return 0;
 }

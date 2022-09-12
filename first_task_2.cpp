@@ -224,7 +224,6 @@ int main(){
 
       break;
       case 4:
-        value = 0;
         std::cout << "Write your value" << std::endl;
         std::cin >> value;
       break;
